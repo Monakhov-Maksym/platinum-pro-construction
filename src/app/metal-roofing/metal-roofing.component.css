@@ -1,0 +1,45 @@
+.metal-roofing-title {
+  font-family: Arial, sans-serif;
+  font-size: 104px;
+  font-weight: 700;
+  line-height: 120px;
+  letter-spacing: 0;
+}
+.superiority-title {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.roofing-description {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0;
+  text-align: center;
+}
+@media (min-width: 1920px) {
+  .hero-section {
+    width: 1920px;
+    height: 614px;
+    margin-top: 71px;
+    background-size: 1920px 614px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (max-width: 1919px) {
+  .hero-section {
+    width: 100vw;
+    height: calc(100vw * (614 / 1920));
+    margin-top: 71px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

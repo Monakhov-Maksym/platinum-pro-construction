@@ -36,10 +36,7 @@
   letter-spacing: 0;
   margin-bottom: 0;
 }
-.container-fluid {
-padding: 50px;
-  background-color: white; /* Изменение цвета заднего фона блока */
-}
+
 
 .hero-section {
   width: 100%;
@@ -66,3 +63,64 @@ padding: 50px;
     height: 600px;
   }
 }
+
+
+
+/* metal-roofing.component.css */
+.feature-list .feature {
+  position: relative;
+  padding-left: 100px; /* Достаточно места для круга и линии */
+  margin-bottom: 40px;
+}
+
+.feature-number {
+  position: absolute;
+  left: 53px;
+  top: 15%; /* Центрируем круг по вертикали относительно .feature */
+  transform: translateY(-50%); /* Смещение круга на половину его высоты вверх */
+  width: 50px; /* Размер круга */
+  height: 50px; /* Размер круга */
+  border: 3px solid #000; /* Толщина линии круга */
+  border-radius: 50%;
+  color: #000;
+  text-align: center;
+  line-height: 45px; /* Подгоняем под размер круга с учетом границ */
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.feature-number::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px; /* Выравниваем линию по нижней части круга */
+  transform: translateX(-50%) translateY(100%);
+  width: 100%; /* Линия на всю ширину .feature, от круга до правого края */
+  height: 2px; /* Толщина линии */
+  background-color: #000;
+}
+
+.feature-title {
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #000;
+  margin-bottom: 20px; /* Больше места между заголовком и описанием */
+  padding-left: 30px; /* Отступ для подчеркивания заголовка */
+  text-align: left;
+  position: relative;
+  border-bottom: 3px solid #000; /* Подчеркивание заголовка */
+}
+
+.feature p {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #555;
+  text-align: left;
+}
+
+
+

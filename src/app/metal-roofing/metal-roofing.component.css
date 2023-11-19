@@ -1,3 +1,17 @@
+.nav-item:not(:last-child) {
+  position: relative;
+}
+
+.nav-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -5px; /* Расстояние от пункта меню до разделителя */
+  transform: translateY(-50%);
+  height: 1em; /* Высота разделителя */
+  width: 1px; /* Ширина разделителя */
+  background-color: #333; /* Цвет разделителя */
+}
 .metal-roofing-title {
   font-family: Arial, sans-serif;
   font-size: 104px;
@@ -11,35 +25,44 @@
   font-weight: 700;
   line-height: 41px;
   letter-spacing: 0;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .roofing-description {
   font-family: Arial, sans-serif;
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 37px;
+  line-height: 1.6;
   letter-spacing: 0;
-  text-align: center;
+  margin-bottom: 0;
 }
-@media (min-width: 1920px) {
+.container-fluid {
+padding: 50px;
+  background-color: white; /* Изменение цвета заднего фона блока */
+}
+
+.hero-section {
+  width: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) and (max-width: 991px) {
   .hero-section {
-    width: 1920px;
-    height: 614px;
-    margin-top: 71px;
-    background-size: 1920px 614px;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 300px;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-section {
+    height: 400px;
   }
 }
 
-@media (max-width: 1919px) {
+@media (min-width: 1200px) {
   .hero-section {
-    width: 100vw;
-    height: calc(100vw * (614 / 1920));
-    margin-top: 71px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 600px;
   }
 }

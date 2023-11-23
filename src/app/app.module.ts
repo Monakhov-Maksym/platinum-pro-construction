@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -22,6 +22,7 @@ import { MovingComponent } from './moving/moving.component';
 
 import { ServicesComponent } from './services/services.component';
 import { MetalRoofingComponent } from './metal-roofing/metal-roofing.component';
+import { DescriptionComponent } from './blocks/description/description.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutPage },
@@ -51,6 +52,7 @@ const routes: Routes = [
     ContactComponent,
     AboutUsComponent,
     MovingComponent,
+    DescriptionComponent,
   ],
   imports: [RouterModule.forRoot(routes), BrowserModule],
   providers: [],

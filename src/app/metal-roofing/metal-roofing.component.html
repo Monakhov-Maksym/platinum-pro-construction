@@ -88,3 +88,19 @@
     </div>
   </div>
 </div>
+
+
+<!--slider-->
+
+<div class="slider-container">
+  <div class="slider-wrapper">
+    <button class="arrow left-arrow" (click)="prevImages()">&#10094;</button>
+    <div class="row">
+      <div class="column" *ngFor="let image of visibleImages">
+        <img [src]="image" alt="Slider Image">
+      </div>
+    </div>
+    <button class="arrow right-arrow" (click)="nextImages()">&#10095;</button>
+  </div>
+</div>
+

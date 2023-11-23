@@ -63,3 +63,21 @@
     height: 600px;
   }
 }
+
+.container-second {
+  margin: 150px 0 150px 0;
+}
+.text-container-painting-h2 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 41px;
+  text-align: center;
+}
+.text-container-painting-p {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+}

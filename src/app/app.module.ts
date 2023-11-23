@@ -11,9 +11,10 @@ import { LandscapingComponent } from './landscaping/landscaping.component';
 import { FlooringComponent } from './flooring/flooring.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { MovingComponent } from './moving/moving.component';
 
 @NgModule({
-  declarations: [AppComponent, MetalRoofingComponent, ServicesComponent, PaintingComponent, WindowsComponent, LandscapingComponent, FlooringComponent, ContactComponent, AboutUsComponent],
+  declarations: [AppComponent, MetalRoofingComponent, ServicesComponent, PaintingComponent, WindowsComponent, LandscapingComponent, FlooringComponent, ContactComponent, AboutUsComponent, MovingComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

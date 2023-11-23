@@ -18,6 +18,7 @@
   font-weight: 700;
   line-height: 120px;
   letter-spacing: 0;
+  z-index: 2;
 }
 .superiority-title {
   font-family: Arial, sans-serif;
@@ -45,6 +46,15 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 56, 78, 0.5); /* Синий цвет с 50% прозрачностью */
+  z-index: 1; /* Поместить поверх изображения */
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .hero-section {
     height: 300px;
@@ -61,23 +71,7 @@
 @media (min-width: 1200px) {
   .hero-section {
     height: 600px;
+
   }
 }
 
-.container-second {
-  margin: 200px 0 200px 0;
-}
-.text-container-painting-h2 {
-  font-family: Arial, sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 41px;
-  text-align: center;
-}
-.text-container-painting-p {
-  font-family: Arial, sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 37px;
-  text-align: center;
-}

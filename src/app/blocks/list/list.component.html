@@ -1,0 +1,15 @@
+<div *ngFor="let item of items; let index = index" class="item">
+  <div class="item__number">
+    {{index + 1}}
+  </div>
+
+  <div class="item__content">
+    <div class="item__title">{{item.title}}</div>
+
+    <div class="item__description">
+      {{item.description}}
+    </div>
+  </div>
+</div>
+
+

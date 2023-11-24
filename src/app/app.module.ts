@@ -21,8 +21,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MovingComponent } from './moving/moving.component';
 
 import { ServicesComponent } from './services/services.component';
-import { MetalRoofingComponent } from './metal-roofing/metal-roofing.component';
+import { MetalRoofingComponent } from './pages/metal-roofing/metal-roofing.component';
 import { DescriptionComponent } from './blocks/description/description.component';
+import { ListComponent } from './blocks/list/list.component';
+import { CarouselComponent } from './blocks/carousel/carousel.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutPage },
@@ -53,6 +55,8 @@ const routes: Routes = [
     AboutUsComponent,
     MovingComponent,
     DescriptionComponent,
+    ListComponent,
+    CarouselComponent,
   ],
   imports: [RouterModule.forRoot(routes), BrowserModule],
   providers: [],

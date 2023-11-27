@@ -3,7 +3,7 @@ import {Component, OnInit} from '@angular/core';
 @Component({
   selector: 'app-metal-roofing',
   templateUrl: './metal-roofing.component.html',
-  styleUrls: ['./metal-roofing.component.css']
+  styleUrls: ['./metal-roofing.component.scss']
 })
 export class MetalRoofingComponent implements OnInit{
   images = [

@@ -14,11 +14,11 @@ import { ContactPage } from './pages/contact/contact.page';
 
 import { PaintingComponent } from './pages/painting/painting.component';
 import { WindowsComponent } from './pages/windows/windows.component';
-import { LandscapingComponent } from './landscaping/landscaping.component';
-import { FlooringComponent } from './flooring/flooring.component';
+import { LandscapingComponent } from './pages/landscaping/landscaping.component';
+import { FlooringComponent } from './pages/flooring/flooring.component';
 import { MovingComponent } from './pages/moving/moving.component';
 
-import { ServicesComponent } from './services/services.component';
+import { ServicesComponent } from './pages/services/services.component';
 import { MetalRoofingComponent } from './pages/metal-roofing/metal-roofing.component';
 import { DescriptionComponent } from './blocks/description/description.component';
 import { ListComponent } from './blocks/list/list.component';

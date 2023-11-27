@@ -6,6 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 import { HeaderBlock } from './blocks/layout/header/header.block';
+import { FooterComponent } from './blocks/layout/footer/footer.component';
+import { CTAComponent } from './blocks/layout/cta/cta.component';
 
 import { TitleBlock } from './blocks/title/title.block';
 
@@ -23,7 +25,6 @@ import { MetalRoofingComponent } from './pages/metal-roofing/metal-roofing.compo
 import { DescriptionComponent } from './blocks/description/description.component';
 import { ListComponent } from './blocks/list/list.component';
 import { CarouselComponent } from './blocks/carousel/carousel.component';
-import { CTAComponent } from './blocks/cta/cta.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutPage },
@@ -38,6 +39,8 @@ const routes: Routes = [
     AppComponent,
 
     HeaderBlock,
+    FooterComponent,
+    CTAComponent,
 
     TitleBlock,
 
@@ -54,7 +57,6 @@ const routes: Routes = [
     DescriptionComponent,
     ListComponent,
     CarouselComponent,
-    CTAComponent,
   ],
   imports: [RouterModule.forRoot(routes), BrowserModule],
   providers: [],

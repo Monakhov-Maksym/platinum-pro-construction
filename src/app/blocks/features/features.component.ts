@@ -6,7 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./features.component.scss'],
 })
 export class FeaturesComponent {
-  @Input() items!: [
-    { title?: string; items: { title: string; description: string }[] },
-  ];
+  @Input() items!: {
+    title?: string;
+    items: { title: string; description: string }[];
+  }[];
 }

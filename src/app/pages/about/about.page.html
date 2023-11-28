@@ -16,12 +16,13 @@
 
 <app-description [title]="'Lorem'" [description]="'lorem'"></app-description>
 
-<app-features [items]="
-  {
+<app-features
+  [items]="
+  [{
     title: 'Painting Services',
     items: [
       { title: 'Elevate Ambiance', description: 'Our painting experts understand the power of color. Whether you seek serene neutrals, vibrant accents, or a unique palette, we\'ll help you achieve the perfect atmosphere.' },
-      { title: 'Precision Application', description: 'Using premium paints and cutting-edge techniques, we ensure smooth and flawless application for a professional finish that stands the test of time.' },
+      { title: 'Precision Application', description: 'Using premium paints and cutting-edge techniques, we ensure smooth and flawless application for a professional finish that stands the test of time.' }
 
     ]
   },
@@ -29,14 +30,12 @@
     title: 'Drywall Solutions',
     items: [
       { title: 'Seamless Installation', description: 'Our drywall experts craft a clean canvas for your interiors. With meticulous installation, we create even surfaces ready for the transformative touch of paint.' },
-      { title: 'Repair and Restoration', description: 'From minor dents to extensive damage, we have the expertise to restore your walls to their original condition. Our team ensures a seamless blend, making repairs virtually invisible.' },
-
+      { title: 'Repair and Restoration', description: 'From minor dents to extensive damage, we have the expertise to restore your walls to their original condition. Our team ensures a seamless blend, making repairs virtually invisible.' }
     ]
-  }
+  }]
 
-"></app-features>
-
-
+"
+></app-features>
 
 <div class="container py-5">
   <div class="row">
@@ -90,6 +89,3 @@
     </div>
   </div>
 </div>
-
-
-

@@ -1,0 +1,18 @@
+<div class="container py-5">
+  <ng-container *ngFor="let feature of items">
+    <div *ngIf="feature.title" class="row mb-4">
+      <div class="col-12">
+        <h2 class="feature-main-title">{{ feature.title }}</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div *ngFor="let item of feature.items; let i = index" class="col-md-3 mb-4">
+        <div class="feature-block">
+          <h3 class="feature-title">{{ item.title }}</h3>
+          <p class="feature-description">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

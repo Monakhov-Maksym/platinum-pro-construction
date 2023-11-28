@@ -25,6 +25,7 @@ import { MetalRoofingComponent } from './pages/metal-roofing/metal-roofing.compo
 import { DescriptionComponent } from './blocks/description/description.component';
 import { ListComponent } from './blocks/list/list.component';
 import { CarouselComponent } from './blocks/carousel/carousel.component';
+import { FeaturesComponent } from './blocks/features/features.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutPage },
@@ -57,6 +58,7 @@ const routes: Routes = [
     DescriptionComponent,
     ListComponent,
     CarouselComponent,
+    FeaturesComponent,
   ],
   imports: [RouterModule.forRoot(routes), BrowserModule],
   providers: [],
